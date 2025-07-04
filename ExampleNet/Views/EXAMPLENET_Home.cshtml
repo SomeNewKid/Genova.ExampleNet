@@ -1,0 +1,36 @@
+﻿@model Genova.ExampleNet.Models.Model
+
+@using Genova.Common.Razor
+@using Genova.Content;
+@using Genova.Content.Entities;
+@using Microsoft.Extensions.DependencyInjection;
+
+@inject Microsoft.Extensions.Localization.IStringLocalizer Localizer
+@inject IServiceProvider ServiceProvider
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = Localizer["EXAMPLENET_HOME_Title"];
+    IContentModule contentModule = (IContentModule)ServiceProvider.GetRequiredKeyedService(
+                                    typeof(IContentModule), Genova.ExampleNet.Website.Identifier);
+    Snippet? footerLinksSnippet = await contentModule.GetSnippetByKeyAsync("SNIPPET_Footer_Links");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Html.Localize("EXAMPLENET_HOME_Title")</title>
+</head>
+<body>
+    <h1>@Html.Localize("EXAMPLENET_HOME_Heading")</h1>
+    <p>@Html.Localize("EXAMPLENET_HOME_Message")</p>
+    <div><img src="/-/images/dog.png" alt="Dog" /></div>
+    <footer>
+        <p>@footerLinksSnippet?.Value</p>
+        <a href="/sitemap">Sitemap</a>
+    </footer>
+</body>
+</html>
