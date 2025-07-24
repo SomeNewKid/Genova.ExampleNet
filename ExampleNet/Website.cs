@@ -364,7 +364,7 @@ public sealed class Website : IWebsite, IProxyWebsite
     }
 
     /// <inheritdoc/>
-    public string? GetHtmlResponse(IExecutionContext executionContext, object model)
+    public string? GetHtmlResponse(HttpContext httpContext, IExecutionContext executionContext, object model)
     {
         return null;
     }
