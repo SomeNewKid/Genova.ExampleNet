@@ -55,7 +55,7 @@
     </PackageReference>
     <PackageReference Include="Genova.Authentication" Version="1.0.0-20250815-0154" />
     <PackageReference Include="Genova.Authorization" Version="1.0.0-20250815-0155" />
-    <PackageReference Include="Genova.Common" Version="1.0.0-20250815-0048" />
+    <PackageReference Include="Genova.Common" Version="1.0.0-20250820-0040" />
     <PackageReference Include="Genova.Content" Version="1.0.0-20250815-0204" />
     <PackageReference Include="Genova.Generation" Version="1.0.0-20250815-0212" />
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.0-preview.25155.1">
