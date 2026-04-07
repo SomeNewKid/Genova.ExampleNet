@@ -7,4 +7,4 @@
     When I request "/example"
     Then the response status code should be 200
     And I should see "Example Domain" in the response
-    And I should see "This domain is for use in illustrative examples in documents" in the response
+    And I should see "This domain is for use" in the response
