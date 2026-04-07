@@ -53,11 +53,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Genova.Authentication" Version="1.0.0-20250815-0154" />
-    <PackageReference Include="Genova.Authorization" Version="1.0.0-20250815-0155" />
-    <PackageReference Include="Genova.Common" Version="1.0.0-20250820-0040" />
-    <PackageReference Include="Genova.Content" Version="1.0.0-20250815-0204" />
-    <PackageReference Include="Genova.Generation" Version="1.0.0-20250815-0212" />
+    <PackageReference Include="Genova.Authentication" Version="1.0.0-20260407-0708" />
+    <PackageReference Include="Genova.Authorization" Version="1.0.0-20260407-0709" />
+    <PackageReference Include="Genova.Common" Version="1.0.0-20260406-2149" />
+    <PackageReference Include="Genova.Content" Version="1.0.0-20260406-2316" />
+    <PackageReference Include="Genova.Generation" Version="1.0.0-20260406-2320" />
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.0-preview.25155.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
