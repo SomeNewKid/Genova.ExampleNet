@@ -164,6 +164,12 @@ public sealed class Website : IWebsite, IProxyWebsite
     }
 
     /// <inheritdoc/>
+    public string[] FolderNames
+    {
+        get { return []; }
+    }
+
+    /// <inheritdoc/>
     public string[] ViewLocations
     {
         get
