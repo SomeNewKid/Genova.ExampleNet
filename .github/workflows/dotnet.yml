@@ -55,7 +55,8 @@ jobs:
     - name: Run xUnit tests (ExampleNet.UnitTests only)
       run: dotnet test ./ExampleNet.UnitTests/ExampleNet.UnitTests.csproj --no-build --configuration Release --verbosity normal
       env:
-        OPENAI_A11YGEN_API_KEY: ${{ secrets.OPENAI_A11YGEN_API_KEY }}
+        OPENAI_API_KEY: dummy-value-for-unit-tests
+        OPENAI_A11YGEN_API_KEY: dummy-value-for-unit-tests
       
     - name: Generate version string with date/time
       id: version
