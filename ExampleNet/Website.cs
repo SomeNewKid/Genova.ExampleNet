@@ -29,16 +29,14 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
-using Yarp.ReverseProxy.Configuration;
 
 namespace Genova.ExampleNet;
 
 /// <summary>
-/// Represents the ExampleNet website, which integrates with the Engine and provides
-/// route and cluster configurations.
+/// Represents the ExampleNet website, which integrates with the Engine.
 /// </summary>
 [CodeQuality(Public = true)]
-public sealed class Website : IWebsite, IProxyWebsite
+public sealed class Website : IWebsite
 {
     /// <summary>
     /// The name which prefixes policy names and view names.
@@ -62,7 +60,6 @@ public sealed class Website : IWebsite, IProxyWebsite
 
     private const string AuthenticationSchemeName = $"{NamePrefix}_CookieScheme";
     private readonly IReadOnlyList<IModule> _modules;
-    private readonly ProxyConfiguration _proxyConfiguration;
     private readonly Authentication.AuthenticationOptions _authOptions;
     private readonly GenerationOptions _generationOptions;
     private readonly ContentModule _contentModule;
@@ -111,8 +108,6 @@ public sealed class Website : IWebsite, IProxyWebsite
             new GenerationModule(),
             _contentModule,
         ];
-
-        _proxyConfiguration = new ProxyConfiguration(Name, Hosts);
     }
 
     /// <inheritdoc/>
@@ -323,18 +318,6 @@ public sealed class Website : IWebsite, IProxyWebsite
     public CorsPolicy? GetCorsPolicy()
     {
         return null;
-    }
-
-    /// <inheritdoc/>
-    public IEnumerable<RouteConfig> GetRoutes()
-    {
-        return _proxyConfiguration.GetRoutes();
-    }
-
-    /// <inheritdoc/>
-    public IEnumerable<ClusterConfig> GetClusters()
-    {
-        return _proxyConfiguration.GetClusters();
     }
 
     /// <inheritdoc/>

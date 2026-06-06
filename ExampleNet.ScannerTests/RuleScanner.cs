@@ -33,7 +33,6 @@ public class RuleScanner : RuleScanner_Base<Host.Program>
                   "Default": "Information",
                   "Microsoft.AspNetCore": "Warning",
                   "Microsoft.AspNetCore.Mvc.Razor": "Debug",
-                  "Microsoft.ReverseProxy.Matching": "Debug",
                   "Microsoft.Hosting.Lifetime": "Information"
                 }
               },
