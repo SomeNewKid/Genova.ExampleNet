@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <!-- Build Settings -->
   <PropertyGroup>
@@ -53,11 +53,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Genova.Authentication" Version="1.0.0-20260602-1252" />
-    <PackageReference Include="Genova.Authorization" Version="1.0.0-20260602-1258" />
+    <PackageReference Include="Genova.Authentication" Version="1.0.0-20260606-1049" />
+    <PackageReference Include="Genova.Authorization" Version="1.0.0-20260606-1049" />
     <PackageReference Include="Genova.Common" Version="1.0.0-20260606-0652" />
-    <PackageReference Include="Genova.Content" Version="1.0.0-20260602-1306" />
-    <PackageReference Include="Genova.Generation" Version="1.0.0-20260602-0914" />
+    <PackageReference Include="Genova.Content" Version="1.0.0-20260606-1051" />
+    <PackageReference Include="Genova.Generation" Version="1.0.0-20260606-1052" />
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.0-preview.25155.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
