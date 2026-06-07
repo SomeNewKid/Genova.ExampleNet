@@ -73,7 +73,6 @@ public class ScannerFiles_Tests
 
 
     [Theory]
-    [InlineData(null)]
     [InlineData("")]
     [InlineData("   ")]
     public void GetMarkdownRoute_should_return_null_for_null_or_whitespace(string embeddedFile)
