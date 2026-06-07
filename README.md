@@ -2,6 +2,12 @@
 
 A Genova website implementation for **[www.example.net](http://www.example.net)** that provides example pages, content-driven routes, and platform integration features.
 
+> [!WARNING]
+> This website is powered by the Genova platform and should not be considered production-ready. It is published as source for review and experimentation rather than as a turnkey website template.
+
+> [!IMPORTANT]
+> A fresh public clone of this repository should not be expected to restore or build without additional Genova infrastructure. Many Genova dependencies are distributed through a private authenticated NuGet feed, and the public source does not include feed credentials or a complete public package graph.
+
 ## Installation
 
 ```bash
@@ -38,4 +44,4 @@ The host loads the website into the Genova engine and serves it for the configur
 
 ## License
 
-GNU General Public License v3.0
+GNU General Public License v3.0. See the `LICENSE` file for details.
